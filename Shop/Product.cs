@@ -53,7 +53,7 @@ namespace csharp_oop_shop.Shop
 
         //BONUS
         public string fmtCode() { 
-            string format = "00000000.##";
+            string format = "00000000";
             return this._code.ToString(format);
         }
     }
