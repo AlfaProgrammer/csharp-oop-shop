@@ -46,5 +46,15 @@ namespace csharp_oop_shop.Shop
         public double getPriceWithVat() { 
             return Math.Round(this._price + (this._price * this._vat / 100), 2);
         }
+
+        public string getFullName() { 
+            return this.name + " " + this._code.ToString();
+        }
+
+        //BONUS
+        public string fmtCode() { 
+            string format = "00000000.##";
+            return this._code.ToString(format);
+        }
     }
 }
